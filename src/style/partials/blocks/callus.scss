@@ -1,0 +1,61 @@
+.callus__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background:$grayOpacity;
+  padding-top:80px;
+  padding-bottom: 20px;
+  margin-top: 98px;
+}
+.callus_header {
+  width:100%;
+  max-width:$colWidth * 4 + $Gap * 3;
+  margin-left:$colWidth + $Gap;
+  .h1 {font-size:56px;margin-bottom:10px;}
+  .h2 {margin-bottom:15px;}
+}
+.callus__phone {
+  text-decoration: none;
+  font-size:32px;
+  color:$yellow;
+  font-family: $Playfair;
+}
+.callus_text {
+  width:100%;
+  max-width:$colWidth * 4 + $Gap * 3;
+  margin-left:$colWidth + $Gap * 2;
+  line-height: 26px;
+  margin-bottom: 73px;
+}
+.callus__wrapper .btn2 {
+  width:100%;
+}
+@media (max-width:1199px) {
+  .callus.container {
+    padding:0;
+  }
+  .callus__wrapper {
+    padding-top: 50px;
+    margin-top:50px;
+    position: relative;
+      .callus_header {
+        max-width: 100%;
+        margin:0;
+        padding:0 20px;
+      }
+      .callus_header .h1 {
+        font-size:36px;
+      }
+      .callus__phone {
+        position: absolute;
+        bottom: 105px;
+      }
+      .callus_text {
+        margin:0;
+        margin-bottom:20px;
+        padding:0 20px;
+      }
+      .btn2 {
+        margin-top:70px;
+      }
+  }
+}

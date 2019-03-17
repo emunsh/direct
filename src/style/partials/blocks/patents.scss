@@ -1,0 +1,16 @@
+.patents__wrapper {
+  margin-top:100px;
+  width:100%;
+  max-width: $Gap * 5 + $colWidth * 6;
+  margin-left: auto;
+}
+.patents__text {
+  line-height: 26px;
+  margin-top: 21px;
+  margin-bottom: 27px;
+}
+@media (max-width:1199px) {
+  .patents__wrapper {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,44 @@
+@mixin defaultLink($linkSize) {
+  text-decoration: none;
+  transition: color ease-out .2s;
+  text-transform: uppercase;
+  font-size: $linkSize;
+  font-weight: bold;
+}
+
+@mixin defaultBtn($height, $linkSize) {
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  height: $height;
+  line-height: $height;
+  text-transform: uppercase;
+  background-color: $yellow;
+  color:#000000;
+  font-size: $linkSize;
+  padding: 0 15px;
+  transition: all ease-out 0.2s;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@mixin defaultBtn2($height, $linkSize) {
+  cursor: pointer;
+  white-space: nowrap;
+  display: block;
+  height: $height;
+  line-height: $height;
+  text-transform: uppercase;
+  font-size: $linkSize;
+  transition: all ease-out 0.2s;
+  background-color:#2D3A52;
+  text-align: center;
+  color:rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  text-decoration: none;
+}
+@mixin defaultBtn2Hover() {
+  background-color:$yellow;
+  color:#000000;
+  text-decoration: none;
+}
