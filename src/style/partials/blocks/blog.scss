@@ -28,9 +28,12 @@
     opacity: 0;
     transition: opacity ease-out 0.2s;
   }
-
 }
-
+.news__item:hover .news__item-image {
+  .yellow-filter {
+    opacity:0.6;
+  }
+}
 .news__item {
   .news__item-date {
     color: rgba(255,255,255,0.5);
@@ -54,14 +57,12 @@
   background-color: rgba(255,255,255,0.3);
   margin-top:25px;
 }
-@media (min-width:1200px) {
-  .news__item:hover .news__item-image {
+@media (max-width:1199px) {
+  .news__item-image {
     .yellow-filter {
-      opacity:0.6;
+      display: none;
     }
   }
-}
-@media (max-width:1199px) {
     .blog {
       margin-top:60px;
       .blog__header {
