@@ -95,13 +95,9 @@ gulp.task('build', [
   'js:build',
   'style:build',
   'fonts:build',
-  'image:build',
 ]);
 
 gulp.task('watch', function(){
-  watch([path.watch.image], function(event, cb) {
-    gulp.start('image:build');
-  });
   watch([path.watch.html], function(event, cb) {
     gulp.start('html:build');
   });

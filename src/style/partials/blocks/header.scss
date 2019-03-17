@@ -155,6 +155,11 @@
       }
     }
   }
+  .submit-idea--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .show-mobile-menu {
     left:0!important;
   }
