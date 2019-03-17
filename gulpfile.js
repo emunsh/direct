@@ -12,6 +12,7 @@ imagemin = require('gulp-imagemin'),
 pngquant = require('imagemin-pngquant'),
 rimraf = require('rimraf'),
 browserSync = require("browser-sync"),
+ghPages = require('gulp-gh-pages'),
 reload = browserSync.reload;
 
 var path = {
@@ -48,6 +49,11 @@ var config = {
   port: 9000,
   logPrefix: "Frontend_Devil"
 };
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('html:build', function () {
   gulp.src(path.src.html) //Выберем файлы по нужному пути
